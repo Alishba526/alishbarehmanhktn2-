@@ -1,0 +1,183 @@
+ @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .your-class {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .your-element {
+    height: auto;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 641px) {
+  body {
+    overflow-x: visible; 
+  }}
+*,
+*::before,
+*::after {
+  box-sizing: border-box; 
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; 
+}
+
+@media (max-width: 640px) {
+  body {
+  
+    
+     width: 100%;
+  }
+  
+  .container, .your-class, .your-element {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Reset */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  body {
+    width: 100%; /* Ensure no extra width on small screens */
+  }
+  
+  .container, .your-class, .your-element {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding: 10px; /* Add padding to prevent content from touching the edges */
+  }
+}
+
+@media (min-width: 641px) {
+  body {
+    overflow-x: visible;
+  }
+  
+  /* Add any other styles for larger screens if needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ggjgh */
