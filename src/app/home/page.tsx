@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 "use client";
 import Image from "next/image";
 import couples from "../../../public/chinaboygirl.png";

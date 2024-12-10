@@ -1,4 +1,4 @@
- @tailwind base;
+ /* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -64,6 +64,7 @@ html, body {
 
 
 
+ */
 
 
 
@@ -74,110 +75,79 @@ html, body {
 
 
 
-@tailwind base;
+
+
+
+
+
+
+
+
+
+ 
+
+
+ @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Global Reset */
-html, body {
-  height: 100%;
-  margin: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-}
-
+/* Global Styles to Prevent Horizontal Scrolling */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+/* Body Specific Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+/* Containers and Elements */
+.container, .your-class, .your-element {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Media Queries for Responsiveness */
 @media (max-width: 640px) {
   body {
-    width: 100%; /* Ensure no extra width on small screens */
+    overflow-x: hidden; /* Prevent horizontal scrolling on small screens */
   }
-  
+
   .container, .your-class, .your-element {
     width: 100%;
     height: auto;
     max-width: 100%;
-    padding: 10px; /* Add padding to prevent content from touching the edges */
+    padding: 0 10px; /* Optional padding for spacing */
+    margin: 0; /* Ensure no overflow from margins */
+  }
+
+  img, video {
+    max-width: 100%; /* Ensure media doesn't overflow */
+    height: auto;
   }
 }
 
 @media (min-width: 641px) {
   body {
-    overflow-x: visible;
+    overflow-x: visible; /* Allow scrolling on larger screens */
   }
-  
-  /* Add any other styles for larger screens if needed */
+
+  .container {
+    max-width: 1200px; /* Fixed max-width for larger devices */
+    margin: 0 auto; /* Center alignment */
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* ggjgh */
