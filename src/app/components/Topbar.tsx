@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Mail, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
 
 // components/Topbar.tsx
 export default function Topbar() {
@@ -24,8 +24,8 @@ export default function Topbar() {
 
         {/* Social Links */}
         <div className="flex justify-center space-x-4">
-          <a href="https://facebook.com" className="text-white">
-            <Facebook size={20} />
+          <a href="https://linkedin.com/in/alishba-rehman-29074821a/" className="text-white">
+            <Linkedin size={20} />
           </a>
           <a href="https://twitter.com" className="text-white">
             <Twitter size={20} />

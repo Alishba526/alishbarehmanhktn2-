@@ -1,10 +1,5 @@
-
-
-"use client";
 import React from "react";
 import Image from "next/image";
-
-
 export default function AboutSection() {
   return (
     <section className="bg-white py-16 px-4">

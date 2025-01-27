@@ -1,4 +1,5 @@
 interface Product {
+    _id: Key | null | undefined;
     id: number;
     name: string;
     description: string;
